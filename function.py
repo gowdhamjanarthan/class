@@ -1,3 +1,73 @@
+def displayName(num): # p
+    print(num)
+displayName("gowtham")  # a
+
+# arguments - you can pass values in function call
+# parameters - you can receive values in function declaration
+
+def addition(a,b):
+    c = a + b
+    print("The value of c is :", c )
+addition(10,23)
+
+def checkValue(x):
+    if x > 0:
+        print("x is positive")
+    elif x == 0:
+        print("x is Zero")
+    else:
+        print("x is Negative")
+    
+checkValue(0)
+##def printValues():
+##    data = [12,34,56,67]
+##    for i in data
+
+my_list = [1,2,3,4,5]
+
+def printAllNumbers(num):
+    sum=0
+    for n in num:
+        sum+=n
+    return sum
+
+print(printAllNumbers(my_list))
+
+
+##def num(a,b):
+##    for i in a+b:
+##        i=a+b
+##        print(i)
+##num(2,2)
+
+# local scope
+def localScopeVar():
+    x = 10
+    print(x,"local scope - inside fn")
+localScopeVar()
+# print(x,"local scope - ourside fn")
+
+
+
+# global scope
+
+y = 350
+def globalScopeVar():
+    print(y,"value of y", "inside the fun")
+globalScopeVar()
+print(y,"value of y", "outside the fun")
+
+
+num = 400  # global scope
+def myNum():
+    n1= 900  # local scope
+    print(num,"this is the value of num")
+    print(n1,"this is the value of n1","inside the fun")
+myNum()
+print(num,"this is the value of num","outside the fn")
+print(n1,"this is the value of n1")
+
+## return is a keyword - it returns the value of function call
 
 # **kwargs
 
